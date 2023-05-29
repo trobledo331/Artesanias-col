@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import '../assets/css/Login.css'
 const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -14,7 +14,7 @@ const Login = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Aquí puedes realizar la lógica de inicio de sesión
+        // Aquí la lógica de inicio de sesión
         console.log('Email:', email);
         console.log('Password:', password);
     };

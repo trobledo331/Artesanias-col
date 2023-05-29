@@ -1,9 +1,17 @@
-import React from 'react'
+import React from 'react';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
+import Login from './components/Login';
+import Register from './components/Register';
 
-export const App = () => {
+const App = () => {
   return (
-    <div>Inicio del proyecto - Artesanias
-      <h2>Hola soy Luis</h2>
-    </div>
-  )
-}
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Login} />
+        <Route exact path="/register" component={Register} />
+      </Switch>
+    </Router>
+  );
+};
+
+export default App;

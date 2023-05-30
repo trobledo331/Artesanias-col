@@ -1,11 +1,13 @@
 import React from 'react'
+import { NavBar } from './components/NavBar'
+import { Footer } from './components'
 
 export const App = () => {
   return (
-    <div>
-      <h1>Inicio del proyecto - Artesanias</h1>
+    <>
+      <NavBar />
 
-      <p>Hola soy Tania Robledo</p>
-    </div>
+      <Footer />
+    </>
   )
 }

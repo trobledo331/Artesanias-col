@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import './App.css';
-import Ingresar from './components/Ingresar'; 
-import Registrar from './components/Registrar'; 
+import { Ingresar } from './components/Ingresar';
+import { Registrar } from './components/Registrar';
 
 function App() {
   const [currentForm, setCurrentForm] = useState('login');
@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       {
-        currentForm === "login" ? <Ingresar onFormSwitch={toggleForm} /> : <Registrar onFormSwitch={toggleForm} /> // Corrección en la referencia a los componentes
+        currentForm === "login" ? <Ingresar onFormSwitch={toggleForm} /> : <Registrar onFormSwitch={toggleForm} />
       }
     </div>
   );

@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const NavBar = () => {
     return (
@@ -57,10 +58,10 @@ export const NavBar = () => {
                         <i className="fas fa-heart text-primary"></i>
                         <span className="badge">0</span>
                     </a>
-                    <a href="" className="btn border">
+                    <Link to={ '/carrito'} className="btn border">
                         <i className="fas fa-shopping-cart text-primary"></i>
                         <span className="badge">0</span>
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

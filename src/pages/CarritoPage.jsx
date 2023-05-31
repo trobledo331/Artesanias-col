@@ -2,6 +2,6 @@ import React from 'react'
 
 export const CarritoPage = () => {
   return (
-    <div>CarritoPage</div>
+    <div>CarritoPage estamos trabajando</div>
   )
 }

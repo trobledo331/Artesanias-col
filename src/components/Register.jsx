@@ -1,64 +1,28 @@
-import React, { useState } from 'react';
-import '../assets/css/Register.css'
-const Register = () => {
-    const [fullName, setFullName] = useState('');
+import React, { useState } from "react";
+
+export const Register = (props) => {
     const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [confirmPassword, setConfirmPassword] = useState('');
-
-    const handleFullNameChange = (e) => {
-        setFullName(e.target.value);
-    };
-
-    const handleEmailChange = (e) => {
-        setEmail(e.target.value);
-    };
-
-    const handlePasswordChange = (e) => {
-        setPassword(e.target.value);
-    };
-
-    const handleConfirmPasswordChange = (e) => {
-        setConfirmPassword(e.target.value);
-    };
+    const [pass, setPass] = useState('');
+    const [name, setName] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Aquí puedes realizar la lógica de registro
-        console.log('Full Name:', fullName);
-        console.log('Email:', email);
-        console.log('Password:', password);
-        console.log('Confirm Password:', confirmPassword);
-    };
+        console.log(email);
+    }
 
     return (
-        <div>
-            <h1>Register</h1>
-            <form onSubmit={handleSubmit}>
-                <label>
-                    Full Name:
-                    <input type="text" value={fullName} onChange={handleFullNameChange} required />
-                </label>
-                <br />
-                <label>
-                    Email:
-                    <input type="email" value={email} onChange={handleEmailChange} required />
-                </label>
-                <br />
-                <label>
-                    Password:
-                    <input type="password" value={password} onChange={handlePasswordChange} required />
-                </label>
-                <br />
-                <label>
-                    Confirm Password:
-                    <input type="password" value={confirmPassword} onChange={handleConfirmPasswordChange} required />
-                </label>
-                <br />
-                <button type="submit">Registrarse</button>
-            </form>
-        </div>
-    );
-};
-
-export default Register;
+        <div className="auth-form-container">
+            <h2>Register</h2>
+        <form className="register-form" onSubmit={handleSubmit}>
+            <label htmlFor="name">Full name</label>
+            <input value={name} name="name" onChange={(e) => setName(e.target.value)} id="name" placeholder="full Name" />
+            <label htmlFor="email">email</label>
+            <input value={email} onChange={(e) => setEmail(e.target.value)}type="email" placeholder="youremail@gmail.com" id="email" name="email" />
+            <label htmlFor="password">password</label>
+            <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="********" id="password" name="password" />
+            <button type="submit">Log In</button>
+        </form>
+        <button className="link-btn" onClick={() => props.onFormSwitch('login')}>Already have an account? Login here.</button>
+    </div>
+    )
+}

@@ -1,17 +1,22 @@
-import React from 'react';
-import { HashRouter as Router, Switch, Route } from 'react-router-dom';
-import Login from './components/Login';
-import Register from './components/Register';
+import React, { useState } from "react";
+import './App.css';
+import { Login } from './components/Login';
+import { Register } from './components/Register';
 
-const App = () => {
+function App() {
+  const [currentForm, setCurrentForm] = useState('login');
+
+  const toggleForm = (formName) => {
+    setCurrentForm(formName);
+  }
+
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/" component={Login} />
-        <Route exact path="/register" component={Register} />
-      </Switch>
-    </Router>
+    <div className="App">
+      {
+        currentForm === "login" ? <Login onFormSwitch={toggleForm} /> : <Register onFormSwitch={toggleForm} />
+      }
+    </div>
   );
-};
+}
 
 export default App;

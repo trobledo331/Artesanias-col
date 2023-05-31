@@ -1,25 +1,60 @@
 import React, { useState } from "react";
+import '../assets/css/Ingresar.css';
 
 export const Ingresar = (props) => {
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
 
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        if (name === 'email') {
+            setEmail(value);
+        } else if (name === 'password') {
+            setPass(value);
+        }
+    }
+
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(email);
-    }
+        console.log(pass);
+
+    };
 
     return (
+        <div className="ingresar-page">
         <div className="auth-form-container">
-            <h2>Ingresar</h2>
+            <h2 className="ingresar-title">Ingresar</h2>
             <form className="login-form" onSubmit={handleSubmit}>
                 <label htmlFor="email">Correo</label>
-                <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="youremail@gmail.com" id="email" name="email" />
+                <input
+                    value={email}
+                    onChange={handleChange}
+                    type="email"
+                    placeholder="youremail@gmail.com"
+                    id="email"
+                    name="email"
+                />
                 <label htmlFor="password">Contraseña</label>
-                <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="********" id="password" name="password" />
+                <input
+                    value={pass}
+                    onChange={handleChange}
+                    type="password"
+                    placeholder="********"
+                    id="password"
+                    name="password"
+                />
                 <button type="submit">Iniciar sesión</button>
             </form>
-            <button className="link-btn" onClick={() => props.onFormSwitch('register')}>¿No tienes una cuenta? Regístrate aquí.</button>
+            <button
+                className="link-btn"
+                onClick={() => props.onFormSwitch('register')}
+            >
+                ¿No tienes una cuenta? Regístrate aquí.
+            </button>
         </div>
-    )
+    </div>
+);
 }
+
+export default Ingresar;

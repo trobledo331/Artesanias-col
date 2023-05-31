@@ -1,5 +1,5 @@
-// Registrar.js
 import React, { useState } from "react";
+import '../assets/css/Registrar.css';
 
 export const Registrar = (props) => {
     const [email, setEmail] = useState('');
@@ -13,7 +13,7 @@ export const Registrar = (props) => {
 
     return (
         <div className="auth-form-container">
-            <h2>Registrar</h2>
+            <h2 className="registrarse-title">Registrarse</h2>
             <form className="register-form" onSubmit={handleSubmit}>
                 <label htmlFor="name">Nombre Completo</label>
                 <input value={name} name="name" onChange={(e) => setName(e.target.value)} id="name" placeholder="Nombre completo" />
@@ -27,3 +27,5 @@ export const Registrar = (props) => {
         </div>
     )
 }
+
+export default Registrar;

@@ -1,6 +1,5 @@
 import React from 'react'
-import { NavBar } from './components/NavBar'
-import { Footer } from './components'
+import { Footer, NavBar } from './components'
 
 export const App = () => {
   return (

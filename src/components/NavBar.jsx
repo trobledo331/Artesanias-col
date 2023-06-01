@@ -67,5 +67,5 @@ export const NavBar = () => {
         </div>
         
         </>
-    )
+ )
 }

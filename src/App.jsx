@@ -1,7 +1,7 @@
 import React from 'react'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom' 
 import { Footer, NavBar } from './components'
-import { BrowserRouter } from 'react-router-dom'
-import { AppRouter } from './router/AppRouter'
+import { ArtesaniasPage, CarritoPage } from './pages'
 
 export const App = () => {
   return (

@@ -6,9 +6,22 @@ export const Registrar = (props) => {
     const [pass, setPass] = useState('');
     const [name, setName] = useState('');
 
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        if (name === 'name') {
+            setName(value);
+        } else if (name === 'email') {
+            setEmail(value);
+        } else if (name === 'password') {
+            setPass(value);
+        }
+    }
+
     const handleSubmit = (e) => {
         e.preventDefault();
+        console.log(name);
         console.log(email);
+        console.log(pass);
     }
 
     return (
@@ -16,16 +29,40 @@ export const Registrar = (props) => {
             <h2 className="registrarse-title">Registrarse</h2>
             <form className="register-form" onSubmit={handleSubmit}>
                 <label htmlFor="name">Nombre Completo</label>
-                <input value={name} name="name" onChange={(e) => setName(e.target.value)} id="name" placeholder="Nombre completo" />
+                <input
+                    value={name}
+                    onChange={handleChange}
+                    type="text"
+                    placeholder="Nombre completo"
+                    id="name"
+                    name="name"
+                />
                 <label htmlFor="email">Correo</label>
-                <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="youremail@gmail.com" id="email" name="email" />
+                <input
+                    value={email}
+                    onChange={handleChange}
+                    type="email"
+                    placeholder="youremail@gmail.com"
+                    id="email"
+                    name="email"
+                />
                 <label htmlFor="password">Contraseña</label>
-                <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="********" id="password" name="password" />
+                <input
+                    value={pass}
+                    onChange={handleChange}
+                    type="password"
+                    placeholder="********"
+                    id="password"
+                    name="password"
+                />
                 <button type="submit">Registrarse</button>
             </form>
-            <button className="link-btn" onClick={() => props.onFormSwitch('login')}>¿Ya tienes una cuenta? Inicia sesión aquí.</button>
+            <button className="link-btn" onClick={() => props.onFormSwitch('login')}>
+                ¿Ya tienes una cuenta? Inicia sesión aquí.
+            </button>
         </div>
     )
 }
 
 export default Registrar;
+

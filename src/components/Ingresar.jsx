@@ -18,11 +18,9 @@ export const Ingresar = (props) => {
         e.preventDefault();
         console.log(email);
         console.log(pass);
-
     };
 
     return (
-        <div className="ingresar-page">
         <div className="auth-form-container">
             <h2 className="ingresar-title">Ingresar</h2>
             <form className="login-form" onSubmit={handleSubmit}>
@@ -53,8 +51,7 @@ export const Ingresar = (props) => {
                 ¿No tienes una cuenta? Regístrate aquí.
             </button>
         </div>
-    </div>
-);
+    );
 }
 
 export default Ingresar;

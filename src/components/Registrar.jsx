@@ -4,6 +4,7 @@ import '../assets/css/Registrar.css';
 export const Registrar = (props) => {
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
+    const [confirmPass, setConfirmPass] = useState('');
     const [name, setName] = useState('');
     const [acceptedTerms, setAcceptedTerms] = useState(false);
 
@@ -15,6 +16,8 @@ export const Registrar = (props) => {
             setEmail(value);
         } else if (name === 'password') {
             setPass(value);
+        } else if (name === 'confirmPassword') {
+            setConfirmPass(value);
         } else if (name === 'terms') {
             setAcceptedTerms(checked);
         }
@@ -22,11 +25,16 @@ export const Registrar = (props) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        if (pass !== confirmPass) {
+            console.log("Las contraseñas no coinciden.");
+            return;
+        }
         console.log(name);
         console.log(email);
         console.log(pass);
         console.log(acceptedTerms);
     }
+
 
     return (
         <div className="auth-form-container">
@@ -58,6 +66,15 @@ export const Registrar = (props) => {
                     placeholder="********"
                     id="password"
                     name="password"
+                />
+                <label htmlFor="confirmPassword">Repetir Contraseña</label>
+                <input
+                    value={confirmPass}
+                    onChange={handleChange}
+                    type="password"
+                    placeholder="********"
+                    id="confirmPassword"
+                    name="confirmPassword"
                 />
                 <div className="form-group">
                     <label htmlFor="terms">Legalidades</label><br />

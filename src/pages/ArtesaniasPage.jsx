@@ -4,10 +4,7 @@ import { Categorias, Footer, NavBar, Politicas, Productos1 } from '../components
 export const ArtesaniasPage = () => {
   return (
     <>
-        <NavBar />
-        <Categorias />
-        <Politicas />
-        <Productos1 />
+        
         <Footer />
     </>
   )

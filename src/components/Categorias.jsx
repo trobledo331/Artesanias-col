@@ -1,4 +1,5 @@
 import React from 'react'
+import Bolso1 from './../assets/img/bolso-1.png'
 
 export const Categorias = () => {
     return (
@@ -9,7 +10,7 @@ export const Categorias = () => {
                     <div className="cat-item d-flex flex-column border mb-4">
                         <p className="text-right">8 Productos</p>
                         <a className="cat-img position-relative overflow-hidden mb-3">
-                            <img className="img-fluid" src="src/assets/Components/img/bolso 9.png" alt="" />
+                            <img className="img-fluid" src={Bolso1} alt="" />
                         </a>
                         <h5 className="font-weight-semi-bold m-0">Mochilas</h5>
                     </div>

@@ -5,15 +5,18 @@ export const Registrar = (props) => {
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
     const [name, setName] = useState('');
+    const [acceptedTerms, setAcceptedTerms] = useState(false);
 
     const handleChange = (e) => {
-        const { name, value } = e.target;
+        const { name, value, checked } = e.target;
         if (name === 'name') {
             setName(value);
         } else if (name === 'email') {
             setEmail(value);
         } else if (name === 'password') {
             setPass(value);
+        } else if (name === 'terms') {
+            setAcceptedTerms(checked);
         }
     }
 
@@ -22,6 +25,7 @@ export const Registrar = (props) => {
         console.log(name);
         console.log(email);
         console.log(pass);
+        console.log(acceptedTerms);
     }
 
     return (
@@ -55,6 +59,17 @@ export const Registrar = (props) => {
                     id="password"
                     name="password"
                 />
+                <div className="form-group">
+                    <label htmlFor="terms">Legalidades</label><br />
+                    <input
+                        type="checkbox"
+                        id="terms"
+                        name="terms"
+                        checked={acceptedTerms}
+                        onChange={handleChange}
+                    />
+                    Acepto los términos y condiciones
+                </div>
                 <button type="submit">Registrarse</button>
             </form>
             <button className="link-btn" onClick={() => props.onFormSwitch('login')}>
@@ -65,4 +80,3 @@ export const Registrar = (props) => {
 }
 
 export default Registrar;
-

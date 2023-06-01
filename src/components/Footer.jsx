@@ -10,33 +10,31 @@ export const Footer = () => {
                         <a href="" className="text-decoration-none">
                             <h1 className="mb-4 display-5 font-weight-semi-bold"><span className="text-primary font-weight-bold border border-white px-3 mr-1">E</span>Shopper</h1>
                         </a>
-                        <p>Dolore erat dolor sit lorem vero amet. Sed sit lorem magna, ipsum no sit erat lorem et magna ipsum dolore amet erat.</p>
-                        <p className="mb-2"><i className="fa fa-map-marker-alt text-primary mr-3"></i>123 Street, New York, USA</p>
-                        <p className="mb-2"><i className="fa fa-envelope text-primary mr-3"></i>info@example.com</p>
-                        <p className="mb-0"><i className="fa fa-phone-alt text-primary mr-3"></i>+012 345 67890</p>
+                        <p>La empresa Artesanias-col es una organización que se dedcia a la venta de productos artesanales 100% colombianos.</p>
+                        <p className="mb-2"><i className="fa fa-map-marker-alt text-primary mr-3"></i>Bogotá, Colombia</p>
+                        <p className="mb-2"><i className="fa fa-envelope text-primary mr-3"></i>arttesanias_col@gmail.com</p>
+                        <p className="mb-0"><i className="fa fa-phone-alt text-primary mr-3"></i>+057 314 678 30</p>
                     </div>
                     <div className="col-lg-8 col-md-12">
                         <div className="row">
                             <div className="col-md-4 mb-5">
                                 <h5 className="font-weight-bold text-dark mb-4">Quick Links</h5>
                                 <div className="d-flex flex-column justify-content-start">
-                                    <a className="text-dark mb-2" href="index.html"><i className="fa fa-angle-right mr-2"></i>Home</a>
-                                    <a className="text-dark mb-2" href="shop.html"><i className="fa fa-angle-right mr-2"></i>Our Shop</a>
-                                    <a className="text-dark mb-2" href="detail.html"><i className="fa fa-angle-right mr-2"></i>Shop Detail</a>
-                                    <a className="text-dark mb-2" href="cart.html"><i className="fa fa-angle-right mr-2"></i>Shopping Cart</a>
-                                    <a className="text-dark mb-2" href="checkout.html"><i className="fa fa-angle-right mr-2"></i>Checkout</a>
-                                    <a className="text-dark" href="contact.html"><i className="fa fa-angle-right mr-2"></i>Contact Us</a>
+                                    <a className="text-dark mb-2" href="index.html"><i className="fa fa-angle-right mr-2"></i>Inicio</a>
+                                    <a className="text-dark mb-2" href="shop.html"><i className="fa fa-angle-right mr-2"></i>Nuestra tienda</a>
+                                    <a className="text-dark mb-2" href="detail.html"><i className="fa fa-angle-right mr-2"></i>Detalle de la tienda</a>
+                                    <a className="text-dark mb-2" href="cart.html"><i className="fa fa-angle-right mr-2"></i>Carro de compras</a>
+                                    <a className="text-dark mb-2" href="checkout.html"><i className="fa fa-angle-right mr-2"></i>Salida</a>
+                                    <a className="text-dark" href="contact.html"><i className="fa fa-angle-right mr-2"></i>Contactanos</a>
                                 </div>
                             </div>
                             <div className="col-md-4 mb-5">
                                 <h5 className="font-weight-bold text-dark mb-4">Quick Links</h5>
                                 <div className="d-flex flex-column justify-content-start">
-                                    <a className="text-dark mb-2" href="index.html"><i className="fa fa-angle-right mr-2"></i>Home</a>
-                                    <a className="text-dark mb-2" href="shop.html"><i className="fa fa-angle-right mr-2"></i>Our Shop</a>
-                                    <a className="text-dark mb-2" href="detail.html"><i className="fa fa-angle-right mr-2"></i>Shop Detail</a>
-                                    <a className="text-dark mb-2" href="cart.html"><i className="fa fa-angle-right mr-2"></i>Shopping Cart</a>
-                                    <a className="text-dark mb-2" href="checkout.html"><i className="fa fa-angle-right mr-2"></i>Checkout</a>
-                                    <a className="text-dark" href="contact.html"><i className="fa fa-angle-right mr-2"></i>Contact Us</a>
+                                    <a className="text-dark mb-2" href="index.html"><i className="fa fa-angle-right mr-2"></i>Incio</a>
+                                    <a className="text-dark mb-2" href="shop.html"><i className="fa fa-angle-right mr-2"></i>Medios de pago</a>
+                                    <a className="text-dark mb-2" href="detail.html"><i className="fa fa-angle-right mr-2"></i>Pasos para tu compra</a>
+                                    <a className="text-dark mb-2" href="cart.html"><i className="fa fa-angle-right mr-2"></i>Politicas de compra</a>
                                 </div>
                             </div>
                             <div className="col-md-4 mb-5">
@@ -50,7 +48,7 @@ export const Footer = () => {
                                             required="required" />
                                     </div>
                                     <div>
-                                        <button className="btn btn-primary btn-block border-0 py-3" type="submit">Subscribe Now</button>
+                                        <button className="btn btn-primary btn-block border-0 py-3" type="submit">Subcribete ahora</button>
                                     </div>
                                 </form>
                             </div>

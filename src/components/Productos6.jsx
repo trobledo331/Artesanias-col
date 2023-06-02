@@ -9,6 +9,7 @@ import Ceramica6 from './../assets/img/Ceramica-6.png'
 import Ceramica7 from './../assets/img/Ceramica-7.png'
 import Ceramica8 from './../assets/img/Ceramica-8.png'
 import Ceramica9 from './../assets/img/Ceramica-9.png'
+import { Footer } from './Footer';
 
 export const Productos6 = () => {
     return (
@@ -172,6 +173,7 @@ export const Productos6 = () => {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
         
     )

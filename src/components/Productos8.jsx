@@ -6,6 +6,7 @@ import exclusivos3 from './../assets/img/exclusivos-3.png'
 import exclusivos4 from './../assets/img/exclusivos-4.png'
 import exclusivos5 from './../assets/img/exclusivos-5.png'
 import exclusivos6 from './../assets/img/exclusivos-6.png'
+import { Footer } from './Footer';
 
 export const Productos8 = () => {
     return (
@@ -118,6 +119,7 @@ export const Productos8 = () => {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
         
     )

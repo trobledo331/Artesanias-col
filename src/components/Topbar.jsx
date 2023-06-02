@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useState,  } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Ingresar } from '../components/Ingresar';
 import { Registrar } from '../components/Registrar';
 import Carrusel1 from './../assets/img/carousel-1.jpg';
@@ -8,6 +8,8 @@ import Logo from './../assets/img/Logo.png';
 import NombreEmpresa from './../assets/img/Nombre.png';
 
 export const Topbar = () => {
+
+    const navigate = useNavigate();
     return (
         <div className="container-fluid mb-5">
             <div className="row border-top px-xl-5">
@@ -17,44 +19,45 @@ export const Topbar = () => {
                         data-toggle="collapse"
                         to="#navbar-vertical"
                     >
-                        <h6 className="m-0">Categorías</h6>
+                        <h6 className="m-0">Categorías </h6>
                     </a>
                     <nav
                         className="collapse show navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0"
                         id="navbar-vertical"
                     >
                         <div className="navbar-nav w-100 overflow-hidden">
-                            <a href="" className="nav-item nav-link">
+                            
+                            <span onClick={() => {navigate('/Productos1')}} className="nav-item nav-link">
                                 Mochilas
-                            </a>
-                            <a href="" className="nav-item nav-link">
+                            </span>
+                            <span onClick={() => {navigate('/Productos2')}} className="nav-item nav-link">
                                 Collares
-                            </a>
-                            <a href="" className="nav-item nav-link">
+                            </span>
+                            <span onClick={() => {navigate('/Productos3')}} className="nav-item nav-link">
                                 Aretes
-                            </a>
-                            <a href="" className="nav-item nav-link">
+                            </span>
+                            <span onClick={() => {navigate('/Productos4')}} className="nav-item nav-link">
                                 Manillas
-                            </a>
-                            <a href="" className="nav-item nav-link">
+                            </span>
+                            <span onClick={() => {navigate('/Productos5')}} className="nav-item nav-link">
                                 Máscaras
-                            </a>
-                            <a href="" className="nav-item nav-link">
+                            </span>
+                            <span onClick={() => {navigate('/Productos6')}} className="nav-item nav-link">
                                 Cerámica
-                            </a>
-                            <a href="" className="nav-item nav-link">
+                            </span>
+                            <span onClick={() => {navigate('/Productos7')}} className="nav-item nav-link">
                                 Utensilios de cocina
-                            </a>
-                            <a href="" className="nav-item nav-link">
+                            </span>
+                            <span className="nav-item nav-link">
                                 Exclusivos
-                            </a>
+                            </span>
                         </div>
                     </nav>
                 </div>
                 <div className="col-lg-9">
                     <nav className="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
                         <a
-                            href=""
+                        
                             className="text-decoration-none d-block d-lg-none"
                         >
                             <img className="logo" src={Logo} />
@@ -107,12 +110,12 @@ export const Topbar = () => {
                                 </a>
                             </div>
                             <div className="navbar-nav ml-auto py-0">
-                                <NavLink to="/ingresar" className="nav-item nav-link">
+                                <a to="/ingresar" className="nav-item nav-link">
                                     Ingresar
-                                </NavLink>
-                                <NavLink to="/registrar" className="nav-item nav-link">
+                                </a>
+                                <a to="/registrar" className="nav-item nav-link">
                                     Registrarse
-                                </NavLink>
+                                </a>
                             </div>
                         </div>
                     </nav>
@@ -128,7 +131,7 @@ export const Topbar = () => {
                                         <h3 className="display-4 text-white font-weight-semi-bold mb-4">
                                             Artesanías originarias de Colombia
                                         </h3>
-                                        <a href="" className="btn btn-light py-2 px-3">
+                                        <a className="btn btn-light py-2 px-3">
                                             Tienda
                                         </a>
                                     </div>
@@ -144,7 +147,7 @@ export const Topbar = () => {
                                         <h3 className="display-4 text-white font-weight-semi-bold mb-4">
                                             Apoya a nuestros artesanos
                                         </h3>
-                                        <a href="" className="btn btn-light py-2 px-3">
+                                        <a className="btn btn-light py-2 px-3">
                                             Tienda
                                         </a>
                                     </div>

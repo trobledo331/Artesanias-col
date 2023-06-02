@@ -10,7 +10,15 @@ import Manilla7 from './../assets/img/Manilla-7.png'
 import Manilla8 from './../assets/img/Manilla-8.png'
 import Manilla9 from './../assets/img/Manilla-9.png'
 
-export const Productos4 = () => {
+export const Productos4 = ({ producto, agregarAlCarrito, quitarDelCarrito }) => {
+    return (
+        <div>
+            <h3>{producto.nombre}</h3>
+            <p>{producto.precio}</p>
+            <button onClick={() => agregarAlCarrito(producto)}>Añadir al carrito</button>
+            <button onClick={() => quitarDelCarrito(producto)}>Quitar del carrito</button>
+        </div>
+    );
     return (
         <div className="Productos-4">
             <div className="text-center mb-4">

@@ -8,6 +8,7 @@ import platos1 from './../assets/img/platos-1.png'
 import platos2 from './../assets/img/platos-2.png'
 import platos3 from './../assets/img/platos-3.png'
 import platos4 from './../assets/img/platos-4.png'
+import { Footer } from './Footer';
 
 export const Productos7 = () => {
     return (
@@ -154,6 +155,7 @@ export const Productos7 = () => {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
         
     )

@@ -8,18 +8,16 @@ import Collar5 from './../assets/img/Collar-5.png'
 import Collar6 from './../assets/img/Collar-6.png'
 import Collar7 from './../assets/img/Collar-7.png'
 import Collar8 from './../assets/img/Collar-8.png'
+import { Footer } from './Footer';
 
 export const Productos2 = ({ producto, agregarAlCarrito, quitarDelCarrito }) => {
         return (
-            <div>
-                <h3>{producto.nombre}</h3>
-                <p>{producto.precio}</p>
+            <div className="Productos-2">
+                {/* <h3>{producto.nombre}</h3>
+                <p>{producto.precio}</p> */}
                 <button onClick={() => agregarAlCarrito(producto)}>Añadir al carrito</button>
                 <button onClick={() => quitarDelCarrito(producto)}>Quitar del carrito</button>
-            </div>
-        );
-    return (
-        <div className="Productos-2">
+
             <div className="text-center mb-4">
                 <h2 className="section-title px-5">
                     <span className="px-2">Collares</span>
@@ -41,9 +39,8 @@ export const Productos2 = ({ producto, agregarAlCarrito, quitarDelCarrito }) => 
                             </div>
                         </div>
                         <div className="card-footer d-flex justify-content-between bg-light border">
-                            <Link to="/carrito" className="btn btn-sm border">
+                            <i className="btn btn-sm border"></i>
                                 <i className="fas fa-eye text-primary mr-1"></i>Ver Detalle
-                            </Link>
                             <button
                                 className="btn btn-sm text-dark p-0"
                                 onClick={() => addToCart({ name: 'Collar Embera Chamí', price: 100000 })}
@@ -68,9 +65,8 @@ export const Productos2 = ({ producto, agregarAlCarrito, quitarDelCarrito }) => 
                             </div>
                         </div>
                         <div className="card-footer d-flex justify-content-between bg-light border">
-                            <Link to="/carrito" className="btn btn-sm border">
+                            <i className="btn btn-sm border"></i>
                                 <i className="fas fa-eye text-primary mr-1"></i>Ver Detalle
-                            </Link>
                             <button
                                 className="btn btn-sm text-dark p-0"
                                 onClick={() => addToCart({ name: 'Collar Embera Mo Do', price: 123000 })}
@@ -95,9 +91,8 @@ export const Productos2 = ({ producto, agregarAlCarrito, quitarDelCarrito }) => 
                             </div>
                         </div>
                         <div className="card-footer d-flex justify-content-between bg-light border">
-                            <Link to="/carrito" className="btn btn-sm border">
+                            <i className="btn btn-sm border"></i>
                                 <i className="fas fa-eye text-primary mr-1"></i>Ver Detalle
-                            </Link>
                             <button
                                 className="btn btn-sm text-dark p-0"
                                 onClick={() => addToCart({ name: 'Collar Arhuaco', price: 95000 })}
@@ -122,9 +117,8 @@ export const Productos2 = ({ producto, agregarAlCarrito, quitarDelCarrito }) => 
                             </div>
                         </div>
                         <div className="card-footer d-flex justify-content-between bg-light border">
-                            <Link to="/carrito" className="btn btn-sm border">
+                            <i className="btn btn-sm border"></i>
                                 <i className="fas fa-eye text-primary mr-1"></i>Ver Detalle
-                            </Link>
                             <button
                                 className="btn btn-sm text-dark p-0"
                                 onClick={() => addToCart({ name: 'Collar Wayuu', price: 80000 })}
@@ -149,9 +143,8 @@ export const Productos2 = ({ producto, agregarAlCarrito, quitarDelCarrito }) => 
                             </div>
                         </div>
                         <div className="card-footer d-flex justify-content-between bg-light border">
-                            <Link to="/carrito" className="btn btn-sm border">
+                            <i className="btn btn-sm border"></i>
                                 <i className="fas fa-eye text-primary mr-1"></i>Ver Detalle
-                            </Link>
                             <button
                                 className="btn btn-sm text-dark p-0"
                                 onClick={() => addToCart({ name: 'Collar Embera', price: 85000 })}
@@ -176,9 +169,8 @@ export const Productos2 = ({ producto, agregarAlCarrito, quitarDelCarrito }) => 
                             </div>
                         </div>
                         <div className="card-footer d-flex justify-content-between bg-light border">
-                            <Link to="/carrito" className="btn btn-sm border">
+                            <i className="btn btn-sm border"></i>
                                 <i className="fas fa-eye text-primary mr-1"></i>Ver Detalle
-                            </Link>
                             <button
                                 className="btn btn-sm text-dark p-0"
                                 onClick={() => addToCart({ name: 'Collar Kuna', price: 92000 })}
@@ -203,9 +195,8 @@ export const Productos2 = ({ producto, agregarAlCarrito, quitarDelCarrito }) => 
                             </div>
                         </div>
                         <div className="card-footer d-flex justify-content-between bg-light border">
-                            <Link to="/carrito" className="btn btn-sm border">
+                            <i className="btn btn-sm border"></i>
                                 <i className="fas fa-eye text-primary mr-1"></i>Ver Detalle
-                            </Link>
                             <button
                                 className="btn btn-sm text-dark p-0"
                                 onClick={() => addToCart({ name: 'Collar Zenú', price: 78000 })}
@@ -230,9 +221,8 @@ export const Productos2 = ({ producto, agregarAlCarrito, quitarDelCarrito }) => 
                             </div>
                         </div>
                         <div className="card-footer d-flex justify-content-between bg-light border">
-                            <Link to="/carrito" className="btn btn-sm border">
+                            <i className="btn btn-sm border"></i>
                                 <i className="fas fa-eye text-primary mr-1"></i>Ver Detalle
-                            </Link>
                             <button
                                 className="btn btn-sm text-dark p-0"
                                 onClick={() => addToCart({ name: 'Collar Muisca', price: 110000 })}
@@ -243,6 +233,8 @@ export const Productos2 = ({ producto, agregarAlCarrito, quitarDelCarrito }) => 
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
+        
     );
 };

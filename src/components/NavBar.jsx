@@ -42,7 +42,6 @@ export const NavBar = () => {
                     <a href="" className="text-decoration-none">
                         <img className="logo" src={Logo} />
                         <img className="logo" src={NombreEmpresa} />
-                        <h1 className="m-0 display-5 font-weight-semi-bold"><span className="text-primary font-weight-bold border px-3 mr-1"></span></h1>
                     </a>
                 </div>
                 <div className="col-lg-6 col-6 text-left">

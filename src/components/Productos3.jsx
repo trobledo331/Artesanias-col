@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Aretes1 from './../assets/img/Aretes-1.png';
 import Aretes2 from './../assets/img/Aretes-2.png';
 import Aretes3 from './../assets/img/Aretes-3.png';
@@ -8,22 +7,19 @@ import Aretes5 from './../assets/img/Aretes-5.png';
 import Aretes6 from './../assets/img/Aretes-6.png';
 import Aretes7 from './../assets/img/Aretes-7.png';
 import Aretes8 from './../assets/img/Aretes-8.png';
+import { Footer } from './Footer';
 
 export const Productos3 = ({ producto, agregarAlCarrito, quitarDelCarrito }) => {
     return (
-        <div>
-            <h3>{producto.nombre}</h3>
-            <p>{producto.precio}</p>
+        <div className="Productos-3">
+            {/* <h3>{producto.nombre}</h3>
+            <p>{producto.precio}</p> */}
             <button onClick={() => agregarAlCarrito(producto)}>Añadir al carrito</button>
             <button onClick={() => quitarDelCarrito(producto)}>Quitar del carrito</button>
-        </div>
-    );
 
-    return (
-        <div className="Productos-3">
             <div className="text-center mb-4">
                 <h2 className="section-title px-5">
-                    <span className="px-2">Areteses</span>
+                    <span className="px-2">Aretes</span>
                 </h2>
             </div>
             <div className="row px-xl-5 pb-3">
@@ -42,9 +38,9 @@ export const Productos3 = ({ producto, agregarAlCarrito, quitarDelCarrito }) => 
                             </div>
                         </div>
                         <div className="card-footer d-flex justify-content-between bg-light border">
-                            <Link to="/carrito" className="btn btn-sm border">
+                            <span className="btn btn-sm border">
                                 <i className="fas fa-eye text-primary mr-1"></i>Ver Detalle
-                            </Link>
+                            </span>
                             <button
                                 className="btn btn-sm text-dark p-0"
                                 onClick={() => agregarAlCarrito({ nombre: 'Aretes Embera Chamí', precio: 35000 })}
@@ -69,9 +65,9 @@ export const Productos3 = ({ producto, agregarAlCarrito, quitarDelCarrito }) => 
                             </div>
                         </div>
                         <div className="card-footer d-flex justify-content-between bg-light border">
-                            <Link to="/carrito" className="btn btn-sm border">
+                            <span className="btn btn-sm border">
                                 <i className="fas fa-eye text-primary mr-1"></i>Ver Detalle
-                            </Link>
+                            </span>
                             <button
                                 className="btn btn-sm text-dark p-0"
                                 onClick={() => agregarAlCarrito({ nombre: 'Aretes Cuero con Borlas', precio: 30000 })}
@@ -96,9 +92,9 @@ export const Productos3 = ({ producto, agregarAlCarrito, quitarDelCarrito }) => 
                             </div>
                         </div>
                         <div className="card-footer d-flex justify-content-between bg-light border">
-                            <Link to="/carrito" className="btn btn-sm border">
+                            <span className="btn btn-sm border">
                                 <i className="fas fa-eye text-primary mr-1"></i>Ver Detalle
-                            </Link>
+                            </span>
                             <button
                                 className="btn btn-sm text-dark p-0"
                                 onClick={() => agregarAlCarrito({ nombre: 'Aretes Círculo Plateado', precio: 22000 })}
@@ -123,9 +119,9 @@ export const Productos3 = ({ producto, agregarAlCarrito, quitarDelCarrito }) => 
                             </div>
                         </div>
                         <div className="card-footer d-flex justify-content-between bg-light border">
-                            <Link to="/carrito" className="btn btn-sm border">
+                            <span className="btn btn-sm border">
                                 <i className="fas fa-eye text-primary mr-1"></i>Ver Detalle
-                            </Link>
+                            </span>
                             <button
                                 className="btn btn-sm text-dark p-0"
                                 onClick={() => agregarAlCarrito({ nombre: 'Aretes Piedra Rosada', precio: 28000 })}
@@ -150,9 +146,9 @@ export const Productos3 = ({ producto, agregarAlCarrito, quitarDelCarrito }) => 
                             </div>
                         </div>
                         <div className="card-footer d-flex justify-content-between bg-light border">
-                            <Link to="/carrito" className="btn btn-sm border">
+                            <span className="btn btn-sm border">
                                 <i className="fas fa-eye text-primary mr-1"></i>Ver Detalle
-                            </Link>
+                            </span>
                             <button
                                 className="btn btn-sm text-dark p-0"
                                 onClick={() => agregarAlCarrito({ nombre: 'Aretes Geométricos', precio: 20000 })}
@@ -177,9 +173,9 @@ export const Productos3 = ({ producto, agregarAlCarrito, quitarDelCarrito }) => 
                             </div>
                         </div>
                         <div className="card-footer d-flex justify-content-between bg-light border">
-                            <Link to="/carrito" className="btn btn-sm border">
+                            <span className="btn btn-sm border">
                                 <i className="fas fa-eye text-primary mr-1"></i>Ver Detalle
-                            </Link>
+                            </span>
                             <button
                                 className="btn btn-sm text-dark p-0"
                                 onClick={() => agregarAlCarrito({ nombre: 'Aretes Florales', precio: 25000 })}
@@ -204,9 +200,9 @@ export const Productos3 = ({ producto, agregarAlCarrito, quitarDelCarrito }) => 
                             </div>
                         </div>
                         <div className="card-footer d-flex justify-content-between bg-light border">
-                            <Link to="/carrito" className="btn btn-sm border">
+                            <span className="btn btn-sm border">
                                 <i className="fas fa-eye text-primary mr-1"></i>Ver Detalle
-                            </Link>
+                            </span>
                             <button
                                 className="btn btn-sm text-dark p-0"
                                 onClick={() => agregarAlCarrito({ nombre: 'Aretes con Dije', precio: 28000 })}
@@ -231,9 +227,9 @@ export const Productos3 = ({ producto, agregarAlCarrito, quitarDelCarrito }) => 
                             </div>
                         </div>
                         <div className="card-footer d-flex justify-content-between bg-light border">
-                            <Link to="/carrito" className="btn btn-sm border">
+                            <span className="btn btn-sm border">
                                 <i className="fas fa-eye text-primary mr-1"></i>Ver Detalle
-                            </Link>
+                            </span>
                             <button
                                 className="btn btn-sm text-dark p-0"
                                 onClick={() => agregarAlCarrito({ nombre: 'Aretes con Perlas', precio: 26000 })}
@@ -244,6 +240,8 @@ export const Productos3 = ({ producto, agregarAlCarrito, quitarDelCarrito }) => 
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
+
     );
 };

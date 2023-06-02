@@ -1,26 +1,28 @@
 import React from 'react'
+import Mascara1 from './../assets/img/Mascara-1.png'
+import Exclusivo1 from './../assets/img/Exclusivos-1.png'
 
 export const Ofertas = () => {
     return (
-        <div class="ofertas">
-            <div class="row px-xl-5">
-                <div class="col-md-6 pb-4">
-                    <div class="position-relative bg-secondary text-center text-md-right text-white mb-2 py-5 px-5">
-                        <img src="src/assets/Components/img/offer-1.png" alt="" />
-                        <div class="position-relative">
-                            <h5 class="text-uppercase text-primary mb-3">20% off the all order</h5>
-                            <h1 class="mb-4 font-weight-semi-bold">Spring Collection</h1>
-                            <a href="" class="btn btn-outline-primary py-md-2 px-md-3">Shop Now</a>
+        <div className="ofertas">
+            <div className="row px-xl-5">
+                <div className="col-md-6 pb-4">
+                    <div className="position-relative bg-secondary text-center text-md-right text-white mb-2 py-5 px-5">
+                        <div className="OfertaFondo1"/>
+                        <div className="position-relative">
+                            <h5 className="text-uppercase text-primary mb-3">20% de descuento en todas las máscaras</h5>
+                            <h1 className="mb-4 font-weight-semi-bold">Colecciones Regionales</h1>
+                            <a href="" className="btn btn-outline-primary py-md-2 px-md-3">Tienda</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 pb-4">
-                    <div class="position-relative bg-secondary text-center text-md-left text-white mb-2 py-5 px-5">
-                        <img src="src/assets/Components/img/offer-2.png" alt="" />
-                        <div class="position-relative">
-                            <h5 class="text-uppercase text-primary mb-3">20% off the all order</h5>
-                            <h1 class="mb-4 font-weight-semi-bold">Winter Collection</h1>
-                            <a href="" class="btn btn-outline-primary py-md-2 px-md-3">Shop Now</a>
+                <div className="col-md-6 pb-4">
+                    <div className="position-relative bg-secondary text-center text-md-left text-white mb-2 py-5 px-5">
+                        <div className="OfertaFondo2"/>
+                        <div className="position-relative">
+                            <h5 className="text-uppercase text-primary mb-3">30% de Descuento </h5>
+                            <h1 className="mb-4 font-weight-semi-bold">Productos Exclusivos</h1>
+                            <a href="" className="btn btn-outline-primary py-md-2 px-md-3">Tienda</a>
                         </div>
                     </div>
                 </div>

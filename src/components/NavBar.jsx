@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Logo from './../assets/img/Logo.png'
+import NombreEmpresa from './../assets/img/Nombre.png'
 
 export const NavBar = () => {
     return (
@@ -38,7 +40,9 @@ export const NavBar = () => {
             <div className="row align-items-center py-3 px-xl-5">
                 <div className="col-lg-3 d-none d-lg-block">
                     <a href="" className="text-decoration-none">
-                        <h1 className="m-0 display-5 font-weight-semi-bold"><span className="text-primary font-weight-bold border px-3 mr-1">E</span>Artesanías</h1>
+                        <img className="logo" src={Logo} />
+                        <img className="logo" src={NombreEmpresa} />
+                        <h1 className="m-0 display-5 font-weight-semi-bold"><span className="text-primary font-weight-bold border px-3 mr-1"></span></h1>
                     </a>
                 </div>
                 <div className="col-lg-6 col-6 text-left">

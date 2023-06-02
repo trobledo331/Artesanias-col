@@ -1,24 +1,11 @@
-import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import {
-  Categorias,
-  Footer,
-  NavBar,
-  Politicas,
-  Productos1,
-  Ofertas,
-} from './components';
-import { ArtesaniasPage, CarritoPage } from './pages';
-import { Ingresar } from './components/Ingresar';
-import { Registrar } from './components/Registrar';
+import React from 'react'
+import { Footer, NavBar } from './components'
+import { BrowserRouter as Router, Route, Routes, Form, Link, NavLink } from 'react-router-dom'
+import { ArtesaniasPage, CarritoPage} from './pages'
+import { Productos1, } from './components/Productos1'
+
 
 export const App = () => {
-  const [currentForm, setCurrentForm] = useState('login');
-
-  const toggleForm = (formName) => {
-    setCurrentForm(formName);
-  };
-
   return (
     <div>
       <Router>
@@ -26,17 +13,9 @@ export const App = () => {
         <Routes>
           <Route path="/" element={<ArtesaniasPage />} />
           <Route path="/carrito" element={<CarritoPage />} />
+          <Route path="/productos1" element={<Productos1 />} />          
         </Routes>
       </Router>
-      <div className="App">
-        {currentForm === 'login' ? (
-          <Ingresar onFormSwitch={toggleForm} />
-        ) : (
-          <Registrar onFormSwitch={toggleForm} />
-        )}
-      </div>
     </div>
-  );
-};
-
-export default App;
+  )
+}

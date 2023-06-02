@@ -1,7 +1,16 @@
 import React from 'react'
+import { Footer, Ofertas, Suscripcion, Ingresar, Registrar } from '../components';
 
 export const CarritoPage = () => {
   return (
-    <div>CarritoPage</div>
-  )
-}
+    <>
+    <Ofertas />
+    <Suscripcion />
+    <Ingresar />
+    <Registrar />
+    <Footer />
+  </>
+);
+};
+
+  

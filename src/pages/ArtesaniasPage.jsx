@@ -1,13 +1,17 @@
-import React from 'react'
-import { Categorias, Footer, NavBar, Politicas, Productos1 } from '../components'
+import React from 'react';
+import { Categorias, Footer, Politicas, Topbar, Ofertas, Suscripcion, Ingresar, Registrar } from '../components';
 
 export const ArtesaniasPage = () => {
   return (
-        <>
-        <Productos1/>
-        <Politicas/>
-        <Categorias/>
-        <Footer />
+    <>
+      <Topbar />
+      <Politicas />
+      <Categorias />
+      <Ofertas />
+      <Suscripcion />
+      <Ingresar />
+      <Registrar />
+      <Footer />
     </>
-  )
-}
+  );
+};

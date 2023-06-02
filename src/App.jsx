@@ -6,14 +6,20 @@ import { ArtesaniasPage, CarritoPage} from './pages'
 
 export const App = () => {
   return (
-    <div>
+    <>
       <Router>
         <NavBar />
         <Routes>
           <Route path="/" element={<ArtesaniasPage />} />
           <Route path="/carrito" element={<CarritoPage />} />
+
+
         </Routes>
+
+        <Footer />
+
+        
       </Router>
-    </div>
+    </>
   )
 }

@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const Footer = () => {
     return ( 
@@ -20,9 +21,9 @@ export const Footer = () => {
                             <div className="col-md-4 mb-5"> 
                                 <h5 className="font-weight-bold text-dark mb-4">Enlaces</h5>
                                 <div className="d-flex flex-column justify-content-start">
-                                    <a className="text-dark mb-2" href="index.html"><i className="fa fa-angle-right mr-2"></i>Inicio</a>
+                                    <Link className="text-dark mb-2" to={ '/' }><i className="fa fa-angle-right mr-2"></i>Inicio</Link>
                                     <a className="text-dark mb-2" href="shop.html"><i className="fa fa-angle-right mr-2"></i>Nuestra tienda</a>
-                                    <a className="text-dark mb-2" href="cart.html"><i className="fa fa-angle-right mr-2"></i>Carro de compras</a>
+                                    <Link className="text-dark mb-2" to={ '/carrito' }><i className="fa fa-angle-right mr-2"></i>Carro de compras</Link>
                                     <a className="text-dark" href="contact.html"><i className="fa fa-angle-right mr-2"></i>Contactanos</a>
                                 </div>
                             </div>

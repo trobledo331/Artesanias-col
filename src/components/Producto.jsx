@@ -1,6 +1,10 @@
 import React from "react";
+import { useCarritoStore } from "../hooks";
 
 export const Producto = ({ producto}) => {
+
+  const { setAddProduct, setDeleteProduct } = useCarritoStore();
+
   return (
     <div className="col-lg-3 col-md-6 col-sm-12 pb-1">
       <div className="card product-item border-0 mb-4">
@@ -20,7 +24,7 @@ export const Producto = ({ producto}) => {
           <a className="btn btn-sm text-dark p-0">
             <i className="fas fa-eye text-primary mr-1"></i>Ver Detalle
           </a>
-          <button onClick={() => {console.log('meOprimio')}}>
+          <button onClick={() => setAddProduct(producto)}>
             Añadir al carrito
           </button>
         </div>

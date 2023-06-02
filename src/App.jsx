@@ -3,12 +3,14 @@ import { Footer, NavBar } from './components'
 import { BrowserRouter as Router, Route, Routes, Form, Link, NavLink } from 'react-router-dom'
 import { ArtesaniasPage, CarritoPage} from './pages'
 import { Productos1, Productos2, Productos3, Productos4, Productos5, Productos6, Productos7, Productos8 } from './components'
+import { Provider } from 'react-redux'
+import { store } from './store'
 
 
 
 export const App = () => {
   return (
-    <div>
+    <Provider store={ store }> 
       <Router>
         <NavBar />
         <Routes>
@@ -25,6 +27,6 @@ export const App = () => {
         </Routes>
         <Footer />
       </Router>
-    </div>
+    </Provider>
   )
 }

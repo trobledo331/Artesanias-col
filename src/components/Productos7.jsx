@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import cucharas1 from './../assets/img/cucharas-1.png'
 import cucharas2 from './../assets/img/cucharas-2.png'
 import cucharas3 from './../assets/img/cucharas-3.png'
@@ -8,7 +7,6 @@ import platos1 from './../assets/img/platos-1.png'
 import platos2 from './../assets/img/platos-2.png'
 import platos3 from './../assets/img/platos-3.png'
 import platos4 from './../assets/img/platos-4.png'
-import { Footer } from './Footer';
 
 export const Productos7 = () => {
     return (
@@ -30,8 +28,8 @@ export const Productos7 = () => {
                             </div>
                         </div>
                         <div className="card-footer d-flex justify-content-between bg-light border">
-                            <a href="" className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
-                            <a href="" className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
+                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
+                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
                         </div>
                     </div>
                 </div>
@@ -47,8 +45,8 @@ export const Productos7 = () => {
                             </div>
                         </div>
                         <div className="card-footer d-flex justify-content-between bg-light border">
-                            <a href="" className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
-                            <a href="" className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
+                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
+                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
                         </div>
                     </div>
                 </div>
@@ -64,8 +62,8 @@ export const Productos7 = () => {
                             </div>
                         </div>
                         <div className="card-footer d-flex justify-content-between bg-light border">
-                            <a href="" className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
-                            <a href="" className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
+                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
+                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
                         </div>
                     </div>
                 </div>
@@ -81,8 +79,8 @@ export const Productos7 = () => {
                             </div>
                         </div>
                         <div className="card-footer d-flex justify-content-between bg-light border">
-                            <a href="" className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
-                            <a href="" className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
+                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
+                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
                         </div>
                     </div>
                 </div>
@@ -98,8 +96,8 @@ export const Productos7 = () => {
                             </div>
                         </div>
                         <div className="card-footer d-flex justify-content-between bg-light border">
-                            <a href="" className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
-                            <a href="" className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
+                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
+                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
                         </div>
                     </div>
                 </div>
@@ -115,8 +113,8 @@ export const Productos7 = () => {
                             </div>
                         </div>
                         <div className="card-footer d-flex justify-content-between bg-light border">
-                            <a href="" className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
-                            <a href="" className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
+                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
+                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
                         </div>
                     </div>
                 </div>
@@ -132,8 +130,8 @@ export const Productos7 = () => {
                             </div>
                         </div>
                         <div className="card-footer d-flex justify-content-between bg-light border">
-                            <a href="" className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
-                            <a href="" className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
+                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
+                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
                         </div>
                     </div>
                 </div>
@@ -149,13 +147,12 @@ export const Productos7 = () => {
                             </div>
                         </div>
                         <div className="card-footer d-flex justify-content-between bg-light border">
-                            <a href="" className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
-                            <a href="" className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
+                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
+                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <Footer/>
         </div>
         
     )

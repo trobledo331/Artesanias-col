@@ -9,7 +9,6 @@ import Ceramica6 from './../assets/img/Ceramica-6.png'
 import Ceramica7 from './../assets/img/Ceramica-7.png'
 import Ceramica8 from './../assets/img/Ceramica-8.png'
 import Ceramica9 from './../assets/img/Ceramica-9.png'
-import { Footer } from './Footer';
 
 export const Productos6 = () => {
     return (
@@ -31,8 +30,8 @@ export const Productos6 = () => {
                             </div>
                         </div>
                         <div className="card-footer d-flex justify-content-between bg-light border">
-                            <a href="" className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
-                            <a href="" className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
+                            <a  className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
+                            <a  className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
                         </div>
                     </div>
                 </div>
@@ -48,8 +47,8 @@ export const Productos6 = () => {
                             </div>
                         </div>
                         <div className="card-footer d-flex justify-content-between bg-light border">
-                            <a href="" className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
-                            <a href="" className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
+                            <a  className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
+                            <a  className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
                         </div>
                     </div>
                 </div>
@@ -65,8 +64,8 @@ export const Productos6 = () => {
                             </div>
                         </div>
                         <div className="card-footer d-flex justify-content-between bg-light border">
-                            <a href="" className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
-                            <a href="" className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
+                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
+                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
                         </div>
                     </div>
                 </div>
@@ -82,8 +81,8 @@ export const Productos6 = () => {
                             </div>
                         </div>
                         <div className="card-footer d-flex justify-content-between bg-light border">
-                            <a href="" className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
-                            <a href="" className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
+                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
+                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
                         </div>
                     </div>
                 </div>
@@ -99,8 +98,8 @@ export const Productos6 = () => {
                             </div>
                         </div>
                         <div className="card-footer d-flex justify-content-between bg-light border">
-                            <a href="" className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
-                            <a href="" className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
+                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
+                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
                         </div>
                     </div>
                 </div>
@@ -116,8 +115,8 @@ export const Productos6 = () => {
                             </div>
                         </div>
                         <div className="card-footer d-flex justify-content-between bg-light border">
-                            <a href="" className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
-                            <a href="" className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
+                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
+                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
                         </div>
                     </div>
                 </div>
@@ -133,8 +132,8 @@ export const Productos6 = () => {
                             </div>
                         </div>
                         <div className="card-footer d-flex justify-content-between bg-light border">
-                            <a href="" className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
-                            <a href="" className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
+                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
+                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
                         </div>
                     </div>
                 </div>
@@ -150,8 +149,8 @@ export const Productos6 = () => {
                             </div>
                         </div>
                         <div className="card-footer d-flex justify-content-between bg-light border">
-                            <a href="" className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
-                            <a href="" className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
+                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
+                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
                         </div>
                     </div>
                 </div>
@@ -167,13 +166,12 @@ export const Productos6 = () => {
                             </div>
                         </div>
                         <div className="card-footer d-flex justify-content-between bg-light border">
-                            <a href="" className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
-                            <a href="" className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
+                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
+                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <Footer/>
         </div>
         
     )

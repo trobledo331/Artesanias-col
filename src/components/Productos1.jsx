@@ -7,7 +7,6 @@ import Bolso5 from './../assets/img/bolso-5.png'
 import Bolso6 from './../assets/img/bolso-6.png'
 import Bolso7 from './../assets/img/bolso-7.png'
 import Bolso8 from './../assets/img/bolso-8.png'
-import { Footer } from './Footer';
 
 export const Productos1 = ({ producto, agregarAlCarrito }) => {
     return (
@@ -195,7 +194,6 @@ export const Productos1 = ({ producto, agregarAlCarrito }) => {
                     </div>
                 </div>
             </div>
-            <Footer/>
         </div>
     );
 };      

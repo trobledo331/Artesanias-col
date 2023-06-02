@@ -23,6 +23,7 @@ export const App = () => {
           <Route path="/productos7" element={<Productos7 />} /> 
           <Route path="/productos8" element={<Productos8 />} />        
         </Routes>
+        <Footer />
       </Router>
     </div>
   )

@@ -7,7 +7,6 @@ import Aretes5 from './../assets/img/Aretes-5.png';
 import Aretes6 from './../assets/img/Aretes-6.png';
 import Aretes7 from './../assets/img/Aretes-7.png';
 import Aretes8 from './../assets/img/Aretes-8.png';
-import { Footer } from './Footer';
 
 export const Productos3 = ({ producto, agregarAlCarrito, quitarDelCarrito }) => {
     return (
@@ -240,7 +239,6 @@ export const Productos3 = ({ producto, agregarAlCarrito, quitarDelCarrito }) => 
                     </div>
                 </div>
             </div>
-            <Footer />
         </div>
 
     );

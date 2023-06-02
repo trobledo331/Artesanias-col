@@ -9,20 +9,16 @@ import Mascara6 from './../assets/img/Mascara-6.png';
 import Mascara7 from './../assets/img/Mascara-7.png';
 import Mascara8 from './../assets/img/Mascara-8.png';
 import Mascara9 from './../assets/img/mascara-9.png';
-import { Footer } from './Footer';
 
 export const Productos5 = ({ producto, agregarAlCarrito, quitarDelCarrito }) => {
     return (
-        <div>
+        <div className="Productos-5">
             {/* <h3>{producto.nombre}</h3>
             <p>{producto.precio}</p> */}
             <button onClick={() => agregarAlCarrito(producto)}>Añadir al carrito</button>
             <button onClick={() => quitarDelCarrito(producto)}>Quitar del carrito</button>
-        </div>
-    );
-
-    return (
-        <div className="Productos-5">
+        
+        
             <div className="text-center mb-4">
                 <h2 className="section-title px-5"><span className="px-2">Mascaras</span></h2>
             </div>
@@ -230,7 +226,6 @@ export const Productos5 = ({ producto, agregarAlCarrito, quitarDelCarrito }) => 
                     </div>
                 </div>
             </div>
-            <Footer/>
         </div>
     );
 }

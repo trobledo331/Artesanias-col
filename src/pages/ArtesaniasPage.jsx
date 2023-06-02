@@ -1,5 +1,5 @@
 import React from 'react';
-import { Categorias, Footer, Politicas, Topbar, Ofertas, Suscripcion, Ingresar, Registrar } from '../components';
+import { Categorias, Footer, Politicas, Topbar, Ofertas, Suscripcion, Productos8 } from '../components';
 
 export const ArtesaniasPage = () => {
   return (
@@ -8,10 +8,8 @@ export const ArtesaniasPage = () => {
       <Politicas />
       <Categorias />
       <Ofertas />
+      <Productos8 />
       <Suscripcion />
-      <Ingresar />
-      <Registrar />
-      <Footer />
     </>
   );
 };

@@ -12,7 +12,7 @@ export const Ofertas = () => {
                         <div className="position-relative">
                             <h5 className="text-uppercase text-primary mb-3">20% de descuento en todas las máscaras</h5>
                             <h1 className="mb-4 font-weight-semi-bold">Colecciones Regionales</h1>
-                            <a href="" className="btn btn-outline-primary py-md-2 px-md-3">Tienda</a>
+                            <a className="btn btn-outline-primary py-md-2 px-md-3">Tienda</a>
                         </div>
                     </div>
                 </div>
@@ -22,7 +22,7 @@ export const Ofertas = () => {
                         <div className="position-relative">
                             <h5 className="text-uppercase text-primary mb-3">30% de Descuento </h5>
                             <h1 className="mb-4 font-weight-semi-bold">Productos Exclusivos</h1>
-                            <a href="" className="btn btn-outline-primary py-md-2 px-md-3">Tienda</a>
+                            <a className="btn btn-outline-primary py-md-2 px-md-3">Tienda</a>
                         </div>
                     </div>
                 </div>

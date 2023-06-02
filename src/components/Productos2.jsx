@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import Collar1 from './../assets/img/Collar-1.png'
 import Collar2 from './../assets/img/Collar-2.png'
 import Collar3 from './../assets/img/Collar-3.png'
@@ -8,7 +7,6 @@ import Collar5 from './../assets/img/Collar-5.png'
 import Collar6 from './../assets/img/Collar-6.png'
 import Collar7 from './../assets/img/Collar-7.png'
 import Collar8 from './../assets/img/Collar-8.png'
-import { Footer } from './Footer';
 
 export const Productos2 = ({ producto, agregarAlCarrito, quitarDelCarrito }) => {
         return (
@@ -233,7 +231,6 @@ export const Productos2 = ({ producto, agregarAlCarrito, quitarDelCarrito }) => 
                     </div>
                 </div>
             </div>
-            <Footer/>
         </div>
         
     );

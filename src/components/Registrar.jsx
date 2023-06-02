@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import '../assets/css/Registrar.css';
 
 export const Registrar = (props) => {
-    const [email, setEmail] = useState('');
-    const [pass, setPass] = useState('');
+    const [name, setName] = useState(localStorage.getItem('name') || '');
+    const [email, setEmail] = useState(localStorage.getItem('email') || '');
+    const [pass, setPass] = useState(localStorage.getItem('password') || '');
     const [confirmPass, setConfirmPass] = useState('');
-    const [name, setName] = useState('');
     const [acceptedTerms, setAcceptedTerms] = useState(false);
 
     const handleChange = (e) => {
@@ -15,26 +15,34 @@ export const Registrar = (props) => {
         } else if (name === 'email') {
             setEmail(value);
         } else if (name === 'password') {
-            setPass(value);
+            if (value.length >= 8) {
+                setPass(value);
+            }
         } else if (name === 'confirmPassword') {
             setConfirmPass(value);
         } else if (name === 'terms') {
             setAcceptedTerms(checked);
         }
-    }
+    };
 
     const handleSubmit = (e) => {
         e.preventDefault();
         if (pass !== confirmPass) {
-            console.log("Las contraseñas no coinciden.");
+            console.log('Las contraseñas no coinciden.');
             return;
         }
+        localStorage.setItem('name', name);
+        localStorage.setItem('email', email);
+        localStorage.setItem('password', pass);
         console.log(name);
         console.log(email);
         console.log(pass);
         console.log(acceptedTerms);
-    }
+    };
 
+    const handleFormSwitch = () => {
+        props.onFormSwitch('login');
+    };
 
     return (
         <div className="auth-form-container">
@@ -89,11 +97,11 @@ export const Registrar = (props) => {
                 </div>
                 <button type="submit">Registrarse</button>
             </form>
-            <button className="link-btn" onClick={() => props.onFormSwitch('login')}>
+            <button className="link-btn" onClick={handleFormSwitch}>
                 ¿Ya tienes una cuenta? Inicia sesión aquí.
             </button>
         </div>
-    )
-}
+    );
+};
 
 export default Registrar;

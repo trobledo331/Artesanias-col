@@ -8,6 +8,17 @@ import Collar6 from './../assets/img/Collar-6.png'
 import Collar7 from './../assets/img/Collar-7.png'
 import Collar8 from './../assets/img/Collar-8.png'
 
+const Collares = [ 
+    { id: 'collarUno', nombre: 'Collar Embera Chamí', precio: '$100.000' , imagen: ''},
+    { id: 'collarDos', nombre: 'Collar Embera Mo Do', precio: '$123.000', imagen: ''},
+    { id: 'collarTres', nombre: 'Collar Arhuaco', precio: '$95.000', imagen: ''},
+    { id: 'collarCuatro', nombre: 'Collar Wayuu<', precio: '$80.000', imagen: ''},
+    { id: 'collarCinco', nombre: 'Collar Embera', precio: '$85.000', imagen: ''},
+    { id: 'collarSeis', nombre: 'Collar Kuna', precio: '$92.000', imagen: ''},
+    { id: 'collarSiete', nombre: 'Collar Zenú', precio: '$78.000', imagen: ''},
+    { id: 'collarOcho', nombre: 'Collar Muisca', precio: '$110.000', imagen: ''},
+]
+
 export const Productos2 = ({ producto, agregarAlCarrito, quitarDelCarrito }) => {
         return (
             <div className="Productos-2">

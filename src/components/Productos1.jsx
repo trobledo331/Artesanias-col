@@ -20,10 +20,10 @@ const Mochilas = [
     { id: 'mochilaSiete', nombre: 'Mochila Wayuu', precio: '100.000' , imagen: Bolso7},
     { id: 'mochilaOcho', nombre: 'Mochila Wayuu', precio: '85.000' , imagen: Bolso8},
 ]
-export const Productos1 = ({ producto, agregarAlCarrito }) => {
-    
+export const Productos1 = ({ producto, agregarAlCarrito, quitarDelCarrito }) => {
     return (
         <div className='Productos1'>
+            
             <div className="text-center mb-4">
                 <h2 className="section-title px-5">
                     <span className="px-2">Mochilas</span>

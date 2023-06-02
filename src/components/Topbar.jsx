@@ -1,4 +1,4 @@
-import React, { useState,  } from 'react';
+import React, { useState, } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Ingresar } from '../components/Ingresar';
 import { Registrar } from '../components/Registrar';
@@ -6,6 +6,7 @@ import Carrusel1 from './../assets/img/carousel-1.jpg';
 import Carrusel2 from './../assets/img/carousel-2.jpg';
 import Logo from './../assets/img/Logo.png';
 import NombreEmpresa from './../assets/img/Nombre.png';
+import { Link } from 'react-router-dom'; 
 
 export const Topbar = () => {
 
@@ -26,38 +27,38 @@ export const Topbar = () => {
                         id="navbar-vertical"
                     >
                         <div className="navbar-nav w-100 overflow-hidden">
-                            
-                            <span onClick={() => {navigate('/Productos1')}} className="nav-item nav-link">
+
+                            <span onClick={() => { navigate('/Productos1') }} className="nav-item nav-link">
                                 Mochilas
                             </span>
-                            <span onClick={() => {navigate('/Productos2')}} className="nav-item nav-link">
+                            <span onClick={() => { navigate('/Productos2') }} className="nav-item nav-link">
                                 Collares
                             </span>
-                            <span onClick={() => {navigate('/Productos3')}} className="nav-item nav-link">
+                            <span onClick={() => { navigate('/Productos3') }} className="nav-item nav-link">
                                 Aretes
                             </span>
-                            <span onClick={() => {navigate('/Productos4')}} className="nav-item nav-link">
+                            <span onClick={() => { navigate('/Productos4') }} className="nav-item nav-link">
                                 Manillas
                             </span>
-                            <span onClick={() => {navigate('/Productos5')}} className="nav-item nav-link">
+                            <span onClick={() => { navigate('/Productos5') }} className="nav-item nav-link">
                                 Máscaras
                             </span>
-                            <span onClick={() => {navigate('/Productos6')}} className="nav-item nav-link">
+                            <span onClick={() => { navigate('/Productos6') }} className="nav-item nav-link">
                                 Cerámica
                             </span>
-                            <span onClick={() => {navigate('/Productos7')}} className="nav-item nav-link">
+                            <span onClick={() => { navigate('/Productos7') }} className="nav-item nav-link">
                                 Utensilios de cocina
                             </span>
-                            <span className="nav-item nav-link">
+                            <span onClick={() => { navigate('/Productos8') }} className="nav-item nav-link">
                                 Exclusivos
-                            </span>
+                            </span >
                         </div>
                     </nav>
                 </div>
                 <div className="col-lg-9">
                     <nav className="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
                         <a
-                        
+
                             className="text-decoration-none d-block d-lg-none"
                         >
                             <img className="logo" src={Logo} />
@@ -86,7 +87,7 @@ export const Topbar = () => {
                                     Tienda
                                 </a>
                                 <a href="detail.html" className="nav-item nav-link">
-                                    Detalles 
+                                    Detalles
                                 </a>
                                 <div className="nav-item dropdown">
                                     <a
@@ -110,12 +111,12 @@ export const Topbar = () => {
                                 </a>
                             </div>
                             <div className="navbar-nav ml-auto py-0">
-                                <a to="/ingresar" className="nav-item nav-link">
+                                <Link to="/ingresar" className="nav-item nav-link">
                                     Ingresar
-                                </a>
-                                <a to="/registrar" className="nav-item nav-link">
+                                </Link>
+                                <Link to="/registrar" className="nav-item nav-link">
                                     Registrarse
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </nav>

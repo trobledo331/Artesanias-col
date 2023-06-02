@@ -18,7 +18,7 @@ export const carritoSlice = createSlice({
       state.carrito.forEach( producto => {
         if ( producto.id === payload.id ) {
          producto.quantity += 1; //++quantity
-         add = true;
+        add = true;
         }
       });
 

@@ -1,4 +1,5 @@
 import React from 'react'
+
 import cucharas1 from './../assets/img/cucharas-1.png'
 import cucharas2 from './../assets/img/cucharas-2.png'
 import cucharas3 from './../assets/img/cucharas-3.png'
@@ -7,151 +8,37 @@ import platos1 from './../assets/img/platos-1.png'
 import platos2 from './../assets/img/platos-2.png'
 import platos3 from './../assets/img/platos-3.png'
 import platos4 from './../assets/img/platos-4.png'
+import { Producto } from './Producto'
+
+const ProductosUtensilios = [
+    { id: 'cucharas1', nombre: 'Cucharas de madera', precio: '27.000' , imagen: cucharas1 },
+    { id: 'cucharas2', nombre: 'Cucharas de madera', precio: '25.000' , imagen: cucharas2 },
+    { id: 'cucharas3', nombre: 'Cucharas de madera', precio: '28.000' , imagen: cucharas3 },
+    { id: 'cucharas4', nombre: 'Cucharas de madera', precio: '23.000' , imagen: cucharas4 },
+    { id: 'platos1', nombre: 'Plato pez de madera', precio: '22.000' , imagen: platos1 },
+    { id: 'platos2', nombre: 'Plato Tortuga', precio: '25.000' , imagen: platos2 },
+    { id: 'platos3', nombre: 'Vajilla lunares rojos', precio: '26.000' , imagen: platos3 },
+    { id: 'platos4', nombre: 'Platos constelaciones', precio: '29.000' , imagen: platos4 },
+]
 
 export const Productos7 = () => {
+
     return (
         
         <div className="Productos-7">
             <div className="text-center mb-4">
-                <h2 className="section-title px-5"><span className="px-2">Productos de Utensilios</span></h2>
+                <h2 className="section-title px-5">
+                    <span className="px-2">Productos de Utensilios</span>
+                </h2>
             </div>
             <div className="row px-xl-5 pb-3">
-                <div className="col-lg-3 col-md-6 col-sm-12 pb-1">
-                    <div className="card product-item border-0 mb-4">
-                        <div className="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                            <img className="img-fluid w-100" src={cucharas1} />
-                        </div>
-                        <div className="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                            <h6 className="text-truncate mb-3">Cucharas de madera</h6>
-                            <div className="d-flex justify-content-center">
-                                <h6>$27.000</h6><h6 className="text-muted ml-2"><del>$33.000</del></h6>
-                            </div>
-                        </div>
-                        <div className="card-footer d-flex justify-content-between bg-light border">
-                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
-                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-lg-3 col-md-6 col-sm-12 pb-1">
-                    <div className="card product-item border-0 mb-4">
-                        <div className="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                            <img className="img-fluid w-100" src={cucharas2} />
-                        </div>
-                        <div className="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                            <h6 className="text-truncate mb-3">Cucharas de madera</h6>
-                            <div className="d-flex justify-content-center">
-                                <h6>$25.000</h6><h6 className="text-muted ml-2"><del>$30.000</del></h6>
-                            </div>
-                        </div>
-                        <div className="card-footer d-flex justify-content-between bg-light border">
-                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
-                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-lg-3 col-md-6 col-sm-12 pb-1">
-                    <div className="card product-item border-0 mb-4">
-                        <div className="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                            <img className="img-fluid w-100" src={cucharas3} />
-                        </div>
-                        <div className="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                            <h6 className="text-truncate mb-3">Cucharas de madera</h6>
-                            <div className="d-flex justify-content-center">
-                                <h6>$28.000</h6><h6 className="text-muted ml-2"><del>$35.000</del></h6>
-                            </div>
-                        </div>
-                        <div className="card-footer d-flex justify-content-between bg-light border">
-                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
-                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-lg-3 col-md-6 col-sm-12 pb-1">
-                    <div className="card product-item border-0 mb-4">
-                        <div className="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                            <img className="img-fluid w-100" src={cucharas4} />
-                        </div>
-                        <div className="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                            <h6 className="text-truncate mb-3">Cucharas de madera</h6>
-                            <div className="d-flex justify-content-center">
-                                <h6>$23.000</h6><h6 className="text-muted ml-2"><del>$29.000</del></h6>
-                            </div>
-                        </div>
-                        <div className="card-footer d-flex justify-content-between bg-light border">
-                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
-                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-lg-3 col-md-6 col-sm-12 pb-1">
-                    <div className="card product-item border-0 mb-4">
-                        <div className="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                            <img className="img-fluid w-100" src={platos1} />
-                        </div>
-                        <div className="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                            <h6 className="text-truncate mb-3">Plato pez de madera</h6>
-                            <div className="d-flex justify-content-center">
-                                <h6>$22.000</h6><h6 className="text-muted ml-2"><del>$28.000</del></h6>
-                            </div>
-                        </div>
-                        <div className="card-footer d-flex justify-content-between bg-light border">
-                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
-                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-lg-3 col-md-6 col-sm-12 pb-1">
-                    <div className="card product-item border-0 mb-4">
-                        <div className="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                            <img className="img-fluid w-100" src={platos2} />
-                        </div>
-                        <div className="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                            <h6 className="text-truncate mb-3">Plato Tortuga</h6>
-                            <div className="d-flex justify-content-center">
-                                <h6>$25.000</h6><h6 className="text-muted ml-2"><del>$30.000</del></h6>
-                            </div>
-                        </div>
-                        <div className="card-footer d-flex justify-content-between bg-light border">
-                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
-                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-lg-3 col-md-6 col-sm-12 pb-1">
-                    <div className="card product-item border-0 mb-4">
-                        <div className="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                            <img className="img-fluid w-100" src={platos3} />
-                        </div>
-                        <div className="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                            <h6 className="text-truncate mb-3">Vajilla lunares rojos</h6>
-                            <div className="d-flex justify-content-center">
-                                <h6>$26.000</h6><h6 className="text-muted ml-2"><del>$31.000</del></h6>
-                            </div>
-                        </div>
-                        <div className="card-footer d-flex justify-content-between bg-light border">
-                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
-                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-lg-3 col-md-6 col-sm-12 pb-1">
-                    <div className="card product-item border-0 mb-4">
-                        <div className="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
-                            <img className="img-fluid w-100" src={platos4} />
-                        </div>
-                        <div className="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                            <h6 className="text-truncate mb-3">Platos constelaciones</h6>
-                            <div className="d-flex justify-content-center">
-                                <h6>$29.000</h6><h6 className="text-muted ml-2"><del>$33.000</del></h6>
-                            </div>
-                        </div>
-                        <div className="card-footer d-flex justify-content-between bg-light border">
-                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</a>
-                            <a className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Añadir al carrito</a>
-                        </div>
-                    </div>
-                </div>
+                
+                {
+                    ProductosUtensilios.map( (utensilio, index) => (
+                        <Producto producto={ utensilio } key={ index } />
+                    ))
+                }
+                    
             </div>
         </div>
         

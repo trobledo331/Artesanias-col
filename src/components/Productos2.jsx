@@ -10,14 +10,14 @@ import Collar8 from "./../assets/img/Collar-8.png";
 import { Producto } from "./Producto";
 
 const Collares = [
-  { id: "collarUno", nombre: "Collar Embera Chamí", precio: "$100.000", imagen: Collar1 },
-  { id: "collarDos", nombre: "Collar Embera Mo Do", precio: "$123.000", imagen: Collar2 },
-  { id: "collarTres", nombre: "Collar Arhuaco", precio: "$95.000", imagen: Collar3 },
-  { id: "collarCuatro", nombre: "Collar Wayuu<", precio: "$80.000", imagen: Collar4 },
-  { id: "collarCinco", nombre: "Collar Embera", precio: "$85.000", imagen: Collar5 },
-  { id: "collarSeis", nombre: "Collar Kuna", precio: "$92.000", imagen: Collar6 },
-  { id: "collarSiete", nombre: "Collar Zenú", precio: "$78.000", imagen: Collar7 },
-  { id: "collarOcho", nombre: "Collar Muisca", precio: "$110.000", imagen: Collar8 },
+{ id: "collarUno", nombre: "Collar Embera Chamí", precio: "$100.000", imagen: Collar1 },
+{ id: "collarDos", nombre: "Collar Embera Mo Do", precio: "$123.000", imagen: Collar2 },
+{ id: "collarTres", nombre: "Collar Arhuaco", precio: "$95.000", imagen: Collar3 },
+{ id: "collarCuatro", nombre: "Collar Wayuu<", precio: "$80.000", imagen: Collar4 },
+{ id: "collarCinco", nombre: "Collar Embera", precio: "$85.000", imagen: Collar5 },
+{ id: "collarSeis", nombre: "Collar Kuna", precio: "$92.000", imagen: Collar6 },
+{ id: "collarSiete", nombre: "Collar Zenú", precio: "$78.000", imagen: Collar7 },
+{ id: "collarOcho", nombre: "Collar Muisca", precio: "$110.000", imagen: Collar8 },
 ];
 
 export const Productos2 = () => {

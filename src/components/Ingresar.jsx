@@ -1,9 +1,10 @@
-import React, { useState } from "react";
-import '../../public/css/Ingresar.css';
+import React, { useState } from 'react';
+import '../styles.css';
+
 
 export const Ingresar = (props) => {
-    const [email, setEmail] = useState('');
-    const [pass, setPass] = useState('');
+    const [email, setEmail] = useState(localStorage.getItem('email') || '');
+    const [pass, setPass] = useState(localStorage.getItem('password') || '');
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -12,12 +13,18 @@ export const Ingresar = (props) => {
         } else if (name === 'password') {
             setPass(value);
         }
-    }
+    };
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        localStorage.setItem('email', email);
+        localStorage.setItem('password', pass);
         console.log(email);
         console.log(pass);
+    };
+
+    const handleFormSwitch = () => {
+        props.onFormSwitch('register');
     };
 
     return (
@@ -38,20 +45,17 @@ export const Ingresar = (props) => {
                     value={pass}
                     onChange={handleChange}
                     type="password"
-                    placeholder="********"
+                    placeholder="****"
                     id="password"
                     name="password"
                 />
-                <button type="submit">Iniciar sesión</button>
+                <button type="submit">Ingresar</button>
             </form>
-            <button
-                className="link-btn"
-                onClick={() => props.onFormSwitch('register')}
-            >
+            <button className="link-btn" onClick={handleFormSwitch}>
                 ¿No tienes una cuenta? Regístrate aquí.
             </button>
         </div>
     );
-}
+};
 
 export default Ingresar;
